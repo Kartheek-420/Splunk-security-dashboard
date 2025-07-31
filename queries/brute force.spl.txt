@@ -1,0 +1,4 @@
+
+
+index="auth_logs" source_type="Metasploit" "authentication failure" "rhost=XX.XX.XX.XX"
+| stats count by rhost

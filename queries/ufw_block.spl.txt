@@ -1,0 +1,4 @@
+
+index=network_logs sourcetype=ufw "[UFW BLOCK]"
+| rex "SRC=(?<src_ip>\d+\.\d+\.\d+\.\d+)"
+| timechart count by src_ip
